@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const booking_controller_1 = require("../controllers/booking.controller");
+const auth_1 = require("../middlewares/auth");
+const validate_1 = require("../middlewares/validate");
+const booking_validation_1 = require("../validations/booking.validation");
+const router = (0, express_1.Router)();
+router.get('/', auth_1.protect, (0, auth_1.restrictTo)('TECHNICIAN'), booking_controller_1.getTechnicianBookings);
+router.patch('/:id', auth_1.protect, (0, auth_1.restrictTo)('TECHNICIAN'), (0, validate_1.validate)(booking_validation_1.updateBookingStatusSchema), booking_controller_1.updateBookingStatus);
+exports.default = router;
