@@ -10,6 +10,7 @@ https://github.com/Sutradhar2071/fixitnow-backend-prisma/blob/main/FixItNow_API_
 
 ## 🔑 Admin Credentials
 Email: admin@fixitnow.com
+
 Password: admin123
 
 ## 🛠️ Tech Stack
@@ -25,7 +26,7 @@ Password: admin123
 
 1. Clone the repo
 ```bash
-git clone https://github.com/<your-username>/fixitnow-backend.git
+[git clone https://github.com/<your-username>/fixitnow-backend.git](https://github.com/Sutradhar2071/fixitnow-backend-prisma)
 cd fixitnow-backend
 ```
 
